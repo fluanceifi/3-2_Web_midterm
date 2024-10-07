@@ -12,39 +12,38 @@ body, html {
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 body {
     display: flex;
-    justify-content: right;
-    align-items: center;
-    background-image: url(/PHOTO/index.JPEG);
     background-size: cover;
-    padding-right: 300px;
-    overflow: hidden; /* 스크롤바 방지 */
+    padding-right: 0px;
 }
 
 .background-window {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+    background-image: url(../PHOTO/bg.JPEG);
+    background-size: cover;
+    background-position:center;
+    filter:blur(5px);
     width: 100vw; /* 브라우저 너비 꽉 채움 */
     height: 100vh; /* 브라우저 높이 꽉 채움 */
     z-index: 0;
+    overflow:hidden;
 }
 
 .foreground-window {
     position: relative;
-    width: 15vw;
-    height: 35vh;
-    background-color: rgba(245, 239, 255, 0.85);
-    border-radius: 6px; /* 둥근 모서리 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(79, 82, 119);
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(245, 239, 255);
+    display: flex; /* flexbox 사용 */
+    align-items: center; /* 세로 정렬 */
+    justify-content: center; /* 가로 정렬 */
     z-index: 1;
-    padding: 50px; /* 내부 여백 */
-    box-shadow: 0 2px 4px rgba(245, 239, 255, 0.66);
+    overflow-y: auto; /* 수직 스크롤 허용 */
+    scroll-behavior: smooth; /* 부드러운 스크롤 효과 */
 }
