@@ -17,7 +17,6 @@ body, html {
 body {
     display: flex;
     background-size: cover;
-    padding-right: 0px;
 }
 
 .background-window {
@@ -26,13 +25,13 @@ body {
     left: 0;
     background-image: url(../PHOTO/bg.JPEG);
     background-size: cover;
-    background-position:center;
     filter:blur(5px);
-    width: 100vw; /* 브라우저 너비 꽉 채움 */
-    height: 100vh; /* 브라우저 높이 꽉 채움 */
+    width: 100%; /* 브라우저 너비 꽉 채움 */
+    height: 100%; /* 브라우저 높이 꽉 채움 */
     z-index: 0;
     overflow:hidden;
 }
+
 
 .foreground-window {
     position: relative;

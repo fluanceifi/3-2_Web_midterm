@@ -2,35 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Noto Serif KR", serif; 
+    font-family: "Noto Serif KR", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-body, html {
+body,
+html {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
-
 }
 
 body {
     display: flex;
     justify-content: right;
     align-items: center;
-    background-image: url(../PHOTO/bg.JPEG);
-    background-size: cover;
     padding-right: 300px;
     overflow: hidden; /* 스크롤바 방지 */
 }
 
 .background-window {
-    position: absolute;
+    position: fixed;
+    background-image: url(../PHOTO/bg.JPEG);
+    background-size: cover;
     top: 0;
     left: 0;
-    width: 100vw; /* 브라우저 너비 꽉 채움 */
-    height: 100vh; /* 브라우저 높이 꽉 채움 */
+    width: 100%; /* 브라우저 너비 꽉 채움 */
+    height: 100%; /* 브라우저 높이 꽉 채움 */
     z-index: 0;
 }
 
@@ -52,15 +52,15 @@ body {
 .login_form {
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* 수직 가운데 정렬 */
-    align-items: center;      /* 수평 가운데 정렬 */
+    justify-content: center; /* 수직 가운데 정렬 */
+    align-items: center; /* 수평 가운데 정렬 */
     width: 100%;
 }
 
 .login_box {
     font-size: 18px;
     margin-bottom: 20px;
-    text-align: center;    
+    text-align: center;
 }
 
 .login_input {
@@ -70,18 +70,19 @@ body {
     margin-bottom: 20px;
     border: 0;
     background-color: rgba(245, 239, 255, 0);
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     transition: border-color 0.6s ease-in-out;
     outline: none;
 }
 
-.login_input::placeholder { /* 클래스 이름 수정 */
+.login_input::placeholder {
+    /* 클래스 이름 수정 */
     color: rgba(0, 0, 0, 0.5);
 }
 
 .login_input:focus {
-  border-bottom: 1px solid #D04848;
-  background-color: rgba(0, 0, 0, 0.01);
+    border-bottom: 1px solid #d04848;
+    background-color: rgba(0, 0, 0, 0.01);
 }
 
 .login_btn {
@@ -95,7 +96,19 @@ body {
     cursor: pointer;
 }
 
-
 .login_btn:hover {
     background-color: rgba(208, 72, 72, 0.7);
+}
+/* 페이지가 위로 올라가는 애니메이션 정의 */
+@keyframes scrollUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.page-transition {
+  animation: scrollUp 0.5s ease-in-out;
 }
