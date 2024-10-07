@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: right;
     align-items: center;
-    background-image: url(/PHOTO/index.JPEG);
+    background-image: url(../PHOTO/bg.JPEG);
     background-size: cover;
     padding-right: 300px;
     overflow: hidden; /* 스크롤바 방지 */
@@ -36,8 +36,8 @@ body {
 
 .foreground-window {
     position: relative;
-    width: 15vw;
-    height: 35vh;
+    width: 350px;
+    height: 500px;
     background-color: rgba(245, 239, 255, 0.85);
     border-radius: 6px; /* 둥근 모서리 */
     display: flex;
