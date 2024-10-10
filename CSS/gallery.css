@@ -1,3 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-size: cover;
+    padding-right: 0px;
+}
+
+.background-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(../PHOTO/bg.JPEG);
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    width: 100vw; /* 브라우저 너비 꽉 채움 */
+    height: 100vh; /* 브라우저 높이 꽉 채움 */
+    z-index: 0;
+    overflow: hidden;
+}
+
+.frontground-window {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    background-color: rgb(243, 240, 249);
+    display: flex; /* flexbox 사용 */
+    align-items: center; /* 세로 정렬 */
+    justify-content: center; /* 가로 정렬 */
+    z-index: 1;
+    overflow-y: auto; /* 수직 스크롤 허용 */
+    scroll-behavior: smooth; /* 부드러운 스크롤 효과 */
+}
+
+
+
+
 img {
     width: 1060px; /* 비율에 맞게 가로 크기 설정 */
     height: auto; /* 세로 크기를 자동으로 조정 */
