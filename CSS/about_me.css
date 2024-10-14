@@ -138,11 +138,7 @@ article {
     margin-bottom: 20px;
     line-height: 1.6;
 }
-#goal img{
-    width: 400px;
-    height: 400px;
-    margin: 100px;
-}
+
 
 #goal section{
     display: flex;
