@@ -156,6 +156,25 @@ article {
     margin-bottom: 100px;
 }
 
+#goal section article{
+    width:50%;
+    height:50%;
+    margin: 10px 0 50px 50px;
+    font-size: 18px;
+}
+#goal section div{
+    width:50%;
+    height:50%;
+}
+
+#goal section div img {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+#goal footer{
+    margin-top: 200px
+}
 
 h1 {
     font-size: 36px;
@@ -180,3 +199,4 @@ h3{
     color: rgba(183, 60, 103, 0.8);
 
 }
+
